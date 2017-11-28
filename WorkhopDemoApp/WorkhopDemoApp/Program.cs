@@ -11,7 +11,7 @@ namespace WorkhopDemoApp
     {
         static void Main(string[] args)
         {
-            String computerNameInAppConfig = ConfigurationManager.AppSettings["ComputerName"] ?? string.Empty;
+            String computerNameInAppConfig = ConfigurationManager.AppSettings["MachineName"] ?? string.Empty;
 
             if (computerNameInAppConfig.ToUpper() == Environment.MachineName.ToUpper())
             {
