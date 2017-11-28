@@ -21,7 +21,6 @@ namespace WorkhopDemoApp
                 Console.WriteLine("The Enrichment Center is required to remind you that you will be baked, and then there will be cake.");
 
                 //TODO: Insert Cake Write Function here ('Program.PrintCake();')
-                //Program.PrintCake();
 
                 Program.PrintFinish();
             }
