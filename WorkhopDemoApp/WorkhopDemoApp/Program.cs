@@ -11,7 +11,7 @@ namespace WorkhopDemoApp
     {
         static void Main(string[] args)
         {
-            String computerNameInAppConfig = ConfigurationManager.AppSettings["ComputerName"] ?? string.Empty;
+            String computerNameInAppConfig = ConfigurationManager.AppSettings["MachineName"] ?? string.Empty;
 
             if (computerNameInAppConfig.ToUpper() == Environment.MachineName.ToUpper())
             {
@@ -21,7 +21,7 @@ namespace WorkhopDemoApp
                 Console.WriteLine("The Enrichment Center is required to remind you that you will be baked, and then there will be cake.");
 
                 //TODO: Insert Cake Write Function here ('Program.PrintCake();')
-                PrintCake();
+
                 Program.PrintFinish();
             }
             else
